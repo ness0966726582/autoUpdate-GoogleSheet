@@ -1,20 +1,13 @@
 '''
-開發日期:20210818
-開發人員:Ness_Huang
-
-主題: 帳號密碼登入+網路修改參數
-
-初始設定
-URL:https://docs.google.com/spreadsheets/d/1MPDP0OMu0xLWOrYWarn2WPnphYnmk0K4rnpujYVhTAg/edit#gid=0
-ID:1MPDP0OMu0xLWOrYWarn2WPnphYnmk0K4rnpujYVhTAg
-PAGE:1
-CELL:A1
-Path:./___adjust___/demo.txt
-
-
-功能1登入介面ID/PWD:test/123
-功能2修改介面可修改sheetAPI服務常用參數URL/ID/PAGE/CELL/Path
-
+更新: 2023-09-22
+目的: 自動化將csv內容更新至指定GOOGLE SHEET
+說明: 
+___adjust___資料夾內有五個參數需要設置
+URL:   目標GOOGLE SHEET   "連結"
+ID:    目標GOOGLE SHEET   "ID"
+PAGE:  目標GOOGLE SHEET   "頁名"  
+CELL:  寫入的             "起始位置"預設A1
+PATH:  來源檔案    "本機路徑"
 '''
 
 #讀取文字檔路徑
@@ -64,17 +57,6 @@ def __GoogleService_Key__():
 BTN__Read_All_txt_Info__()
 #BTN__Open_URL__()
 __GoogleService_Key__()
-
-
-'''
-更新日期:2021-08-19
-開發人員:黃亦豪Ness_Huang
-
-【使用前請確認以下】
-1.GUI_SheetAPI_V3 第一次使用請編輯 URL / ID / PAGE / CELL /PATH
-2.
-
-'''
 
 my_y=100
 
